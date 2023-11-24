@@ -66,13 +66,18 @@ function createPost(postArray) {
                 </div>
             </div>
         `;
+
+    // Select the like button and like count for the current post
+    let likeBtn = document.querySelector(".likeBtn");
+    let likeEl = document.querySelector(".likeCount");
+
+    let countFromArray = postArray[i];
+    let currentCount = countFromArray[1];
+
+    likeBtn.addEventListener("click", () => {
+      // Increase the like count for the specific post when the like button is clicked
+      postArray[i].likes++;
+      likeEl.textContent = ` ${postArray[i].likes}`;
+    });
   }
-
-  let likeBtn = document.querySelector(".likeBtn");
-  let likeEl = document.querySelector(".likeCount");
-
-  let likes = 0;
-  likeBtn.addEventListener("click", () => {
-    console.log("hello");
-  });
 }
