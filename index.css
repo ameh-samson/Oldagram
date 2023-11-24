@@ -1,0 +1,118 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: "Source Sans Pro", sans-serif;
+  background: #ededed;
+}
+
+/* typography */
+
+@font-face {
+  font-family: Source Sans Pro;
+  src: url("assets/fonts/SourceSansPro-Bold.otf");
+  src: url("assets/fonts/SourceSansPro-Regular.otf");
+}
+
+.likes,
+.username-caption {
+  margin-top: 12px;
+}
+
+.username-caption {
+  margin-bottom: 12px;
+}
+
+/* utility class */
+
+.fs-l {
+  font-size: 13px;
+}
+
+.fs-m {
+  font-size: 12px;
+}
+
+.fw-700 {
+  font-weight: 700;
+}
+
+.fw-400 {
+  font-weight: 400;
+}
+
+/* .padding-left-right {
+  padding: 0 16px;
+} */
+
+.avatar-width {
+  width: 34px;
+  height: 34px;
+}
+
+/* logo & images */
+
+.oldagram-logo {
+  width: 127px;
+}
+
+/* layout */
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 18px;
+  border-bottom: 1px solid #c6c6c6;
+}
+
+.container {
+  width: 375px;
+  margin-inline: auto;
+  background: #ffffff;
+}
+
+.post-container {
+  margin-bottom: 25px;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.user-info,
+.icons-container {
+  padding: 10px 18px;
+}
+
+.post-img {
+  width: 100%;
+}
+
+.icons {
+  width: 23px;
+  margin-right: 20px;
+}
+
+.icons:hover {
+  color: #f10505;
+}

@@ -28,3 +28,15 @@ const posts = [
     likes: 152,
   },
 ];
+
+document.addEventListener("DOMContentLoaded", () => {
+  console.log("hello");
+});
+
+
+function createPost(posts){
+
+for(let i = 0; )
+
+
+}
