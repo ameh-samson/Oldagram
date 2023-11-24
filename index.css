@@ -116,3 +116,7 @@ body {
 .icons:hover {
   color: #f10505;
 }
+
+.fa-heart {
+  color: #ff0000;
+}
